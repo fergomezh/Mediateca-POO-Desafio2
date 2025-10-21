@@ -48,7 +48,9 @@ public class PanelLibro extends JPanel {
         JButton btnEliminar = new JButton("Eliminar");
         botones.add(btnEliminar);
         btnEliminar.addActionListener(e -> eliminarLibro());
-        botones.add(btnAgregar); botones.add(btnModificar); botones.add(btnListar);
+        botones.add(btnAgregar);
+        botones.add(btnModificar);
+        botones.add(btnListar);
         add(botones, BorderLayout.CENTER);
 
         modeloTabla = new DefaultTableModel(new String[]{

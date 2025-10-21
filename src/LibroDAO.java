@@ -115,9 +115,12 @@ public class LibroDAO {
                  PreparedStatement stmt2 = conn.prepareStatement("DELETE FROM material_escrito WHERE codigo = ?");
                  PreparedStatement stmt1 = conn.prepareStatement("DELETE FROM material WHERE codigo = ?")) {
 
-                stmt3.setString(1, codigo); stmt3.executeUpdate();
-                stmt2.setString(1, codigo); stmt2.executeUpdate();
-                stmt1.setString(1, codigo); stmt1.executeUpdate();
+                stmt3.setString(1, codigo);
+                stmt3.executeUpdate();
+                stmt2.setString(1, codigo);
+                stmt2.executeUpdate();
+                stmt1.setString(1, codigo);
+                stmt1.executeUpdate();
 
                 conn.commit();
             } catch (SQLException e) {
